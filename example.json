@@ -38,8 +38,6 @@
     },
     "payload": {
         "customer_id": "123",
-        "email": "user@example.com",
-        "amount": 123,
-        "currency": "eur"
+        "email": "user@example.com"
     }
 }
