@@ -14,11 +14,9 @@ This file contains the flow.
 I added 'payload' object just to have 'actual' data to parse.
 ```
 "payload": {
-        "customer_id": "123",
-        "email": "user@example.com",
-        "amount": 123,
-        "currency": "eur"
-    }
+    "customer_id": "123",
+    "email": "user@example.com"
+}
 ```
 
 ## Endpoints
@@ -29,7 +27,17 @@ I added 'payload' object just to have 'actual' data to parse.
 ```
 
 ## Running the app
-Run in a docker container or locally without it.
+Docker container
+```
+cd flow_manager/
+...
+```
+
+Locally (uvicorn)
+```
+cd flow_manager/
+uvicorn flow_manager.api:app --reload
+```
 
 ## POSTing a request
 ```
