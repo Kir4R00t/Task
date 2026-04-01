@@ -28,6 +28,14 @@ I added 'payload' object just to have 'actual' data to parse.
 
 ## Running the app
 Docker container - completely optional, however fitting for this kind of project :)
+
+Load virtual env & install packages
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+On Docker
 ```
 cd flow_manager/
 docker compose up --build
