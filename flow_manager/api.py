@@ -12,7 +12,7 @@ def healthcheck() -> Dict:
 
 @app.get("/manager/tasks")
 def get_tasks() -> Dict:
-    return {"available_tasks": list(TASKS.keys())} # TODO: should return values (func names)
+    return {"available_tasks": [func.__name__ for func in TASKS.values()]}
 
 @app.post("/manager/run")
 def run_flow(flow_data: Dict):
