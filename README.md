@@ -27,10 +27,10 @@ I added 'payload' object just to have 'actual' data to parse.
 ```
 
 ## Running the app
-Docker container
+Docker container - completely optional, however fitting for this kind of project :)
 ```
 cd flow_manager/
-...
+docker compose up --build
 ```
 
 Locally (uvicorn)
