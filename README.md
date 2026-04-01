@@ -40,11 +40,9 @@ uvicorn flow_manager.api:app --reload
 ```
 
 ## POSTing a request
+You can POST the flow either using `curl` or via the swagger at `http://127.0.0.1:8000/docs`.
 ```
-curl ...
-```
-
-## Example response
-```
-...
+curl -X POST "http://127.0.0.1:8000/manager/run" `
+     -H "Content-Type: application/json" `
+     -d "@example.json"
 ```
