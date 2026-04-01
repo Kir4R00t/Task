@@ -9,8 +9,8 @@ flow_manager/
 |── api.py              # FastAPI endpoints
 ```
 
-## example.json
-This file contains the flow. 
+## JSON files
+'example.json' file contains the flow. 
 I added 'payload' object just to have 'actual' data to parse.
 ```
 "payload": {
@@ -18,6 +18,7 @@ I added 'payload' object just to have 'actual' data to parse.
     "email": "user@example.com"
 }
 ```
+You can also find example1.json which shows how the app would react to bad payload and task1 ending in failure.
 
 ## Endpoints
 ```
